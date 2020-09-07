@@ -1,3 +1,8 @@
+progate講座メモ
+
+Git Ⅰ(学習コース)
+https://prog-8.com/lessons/git/study/1
+
 # git の基本コマンド
 
 ## gitフォルダの 新規作成 "git init"
