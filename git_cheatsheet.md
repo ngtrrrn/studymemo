@@ -25,6 +25,10 @@ git_mycheatsheet
 `git init`
 --bare : 作業ディレクトリを持たない（コミットできない）
 
+## gitフォルダのクローン作成 "git clone"
+`git clone <クローンしたいgitフォルダの場所>`
+場所は、パスまたはgithubURLでも可能
+紐付けはあるので`git remote add`は不要
 
 ## ファイルの共有準備 "git add"
 `git add <共有したいファイル名>`
@@ -39,9 +43,12 @@ git_mycheatsheet
 
 ## リモートで共有準備 "git remote add"
 `git remote add <リモート名> <リモート先URL>`
+リモート名はクライアント側で一意に認識するためのもの
 
 ## リモート先に共有 "git push"
 `git push <リモート名> <ブランチ名>`
+`git push -u <リモート名> <ブランチ名>`
+-u : 次回以降は`git push`のみで、今回引数に指定したリモート名、ブランチ名でpushしてくれる
 
 ## リモートからファイルをダウンロード "git pull"
 `git pull <リモート名> <ブランチ名>`
@@ -69,7 +76,7 @@ git_mycheatsheet
 
 ## コミット履歴の確認 "git log"
 `git log` 変更履歴の表示
-`git log -p` 変更履歴＋差分の表示
+`git log -p <コミットID>` 変更履歴＋差分の表示
 `git log --oneline` 各変更履歴を一行表示
 `git log --stat` 変更ファイル数、また各ファイルの変更箇所数を表示
 
@@ -111,6 +118,10 @@ ORIG_HEAD : 直前のリセットをなかったことにする
 `git branch <ブランチ名>`
 ブランチを削除する
 `git branch -d <ブランチ名>`
+<ブランチ名>の書き方
+【ブランチルール】
+feat/[issueの番号]/[作業内容]
+例：feat/1/createWebTemplate
 
 ## ブランチを移動する "git checkout"
 `git checkout <ブランチ名>`
