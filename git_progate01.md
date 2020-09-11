@@ -38,7 +38,6 @@ https://prog-8.com/lessons/git/study/1
 
 
 
-
 # コード共同編集の基本的な流れ
 1. ファイルをダウンロードする "git pull"
 1. コードを変更する 
